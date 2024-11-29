@@ -1,0 +1,75 @@
+.marquee-wrapper {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 255, 0.2) 50%, rgba(128, 0, 128, 0.2) 100%);
+}
+
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 255, 0.1));
+}
+
+.marquee-normal {
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-reverse {
+    animation: marquee-reverse 30s linear infinite;
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.brand {
+    margin: 0 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.brand:hover {
+    color: #FF0050;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.font1 {
+    font-family: 'Arial', sans-serif;
+}
+
+.font2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}

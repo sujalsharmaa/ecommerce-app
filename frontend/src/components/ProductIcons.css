@@ -1,0 +1,55 @@
+/* src/components/ProductIcons.css */
+
+.product-icons-container {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.1), rgba(0, 255, 0, 0.1), rgba(0, 0, 255, 0.1));
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.product-icon {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.5), rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    border: 5px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon-label {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: #333;
+}
+
+.icon-wrapper:hover .product-icon {
+    border: 2px solid rgb(255, 0, 0);
+    transform: scale(1.1);
+}
+
+.product-icons-container {
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.2), rgba(0, 255, 0, 0.2), rgba(0, 0, 255, 0.2));
+    animation: gradient 3s infinite alternate;
+}
+
+@keyframes gradient {
+    0% {
+        background: radial-gradient(circle, rgba(255, 0, 0, 0.2), rgba(0, 255, 0, 0.2), rgba(0, 0, 255, 0.2));
+    }
+
+    100% {
+        background: radial-gradient(circle, rgba(0, 255, 0, 0.2), rgba(0, 0, 255, 0.2), rgba(255, 0, 0, 0.2));
+    }
+}
