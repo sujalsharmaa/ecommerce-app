@@ -25,7 +25,7 @@ const ImageRectangles: React.FC = () => {
 
     for (let i = 0; i < products.length; i += 4) {
         const divContent = products.slice(i, i + 4).map((product) => (
-            <img key={product.id} src={product.image} alt={product.id} />
+            <img key={product.id} src={product.image} />
         ));
 
         imageDivs.push(

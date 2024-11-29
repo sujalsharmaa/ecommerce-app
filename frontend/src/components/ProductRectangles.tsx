@@ -81,9 +81,9 @@ const ProductRectangles: React.FC = () => {
                                         alt={product.name}
                                         className="w-full h-32 object-cover rounded-lg"
                                     />
-                                    {product.cashback && (
+                                    {product && (
                                         <div className="absolute bottom-0 left-0 right-0 bg-blue-600 text-white text-center p-2">
-                                            <p className="text-sm font-semibold">{product.cashback}</p>
+                                            <p className="text-sm font-semibold">{product.name}</p>
                                         </div>
                                     )}
                                 </div>

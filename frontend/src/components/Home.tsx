@@ -5,7 +5,6 @@ import ProductIcons from '../components/ProductIcons';
 import Carousel from '../components/Carousel';
 import ProductRecommendations from '../components/ProductRecommendations';
 import Footer from '../components/Footer';
-import BrandMarquee from './BrandMarquee';
 
 const Home: React.FC = () => {
     return (
@@ -14,7 +13,6 @@ const Home: React.FC = () => {
             <ProductIcons />
             <Carousel />
             <ProductRecommendations />
-    
             <Footer />
         </>
     );

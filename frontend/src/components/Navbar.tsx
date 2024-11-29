@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { FaSearch, FaShoppingCart } from 'react-icons/fa';
-import { MdLanguage } from 'react-icons/md';
 
 const Navbar: React.FC = () => {
     const [isDarkMode, setIsDarkMode] = useState(() => 
